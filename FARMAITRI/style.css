@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.final_logo{
+    width: 50px;
+    padding-right: 20px;
+}
+
+.design{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    /* background-image:  url("steven-weeks-DUPFowqI6oI-unsplash\ \(1\).jpg"); */
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("steven-weeks-DUPFowqI6oI-unsplash\ \(1\).jpg");
+   
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header h3{
+    color: #fff;
+    
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: LEFT;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 13px;
+    font-family:sans-serif
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width:50%;
+    color: rgba(147, 220, 147, 0.888);
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: rgb(176, 161, 161);
+    font-size: large;
+    font-weight: bold;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration:dotted;
+    color: rgb(255, 255, 255);
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position:relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #555;
+    background: #ff4;
+    transition: 0.7s;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width:700px) {
+    .text-box h1 {
+        font-size: 2 0px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+
+   
+}
